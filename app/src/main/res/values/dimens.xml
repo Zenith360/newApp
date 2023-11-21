@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="register_activity_edittext_height">65dp</dimen>
+    <dimen name="register_activity_drawable_padding">8dp</dimen>
+    <dimen name="register_activity_edittext_padding">10dp</dimen>
+    <dimen name="register_activity_edittext_marginhorizontal">10dp</dimen>
+    <dimen name="register_activity_edittext_margintop">10dp</dimen>
+</resources>

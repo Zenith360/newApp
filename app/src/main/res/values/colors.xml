@@ -4,5 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="food_runner_background_color">#ff5139</color>
     <color name="icon_grey">#848484</color>
-    <color name="log_in_button_color">#ec2333</color>
+    <color name="general_button_color">#ec2333</color>
 </resources>

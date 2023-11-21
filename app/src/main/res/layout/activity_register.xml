@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/food_runner_background_color"
+    tools:context=".RegisterActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtRegYou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/arrow_back"
+        android:drawablePadding="10dp"
+        android:text="@string/register_yourself"
+        android:textColor="@color/white"
+        android:textSize="22.5sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_activity_edittext_height"
+        android:layout_below="@id/txtRegYou"
+        android:layout_marginHorizontal="@dimen/register_activity_edittext_marginhorizontal"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/rounded_edittext_bg"
+        android:drawableStart="@drawable/person_outline"
+        android:drawablePadding="@dimen/register_activity_drawable_padding"
+        android:hint="@string/name_input"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_activity_edittext_height"
+        android:layout_below="@id/etName"
+        android:layout_marginHorizontal="@dimen/register_activity_edittext_marginhorizontal"
+        android:layout_marginTop="@dimen/register_activity_edittext_margintop"
+        android:background="@drawable/rounded_edittext_bg"
+        android:drawableStart="@drawable/mail_icon"
+        android:drawablePadding="@dimen/register_activity_drawable_padding"
+        android:hint="@string/e_mail_address_input"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/register_activity_edittext_padding" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etMobileNum"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_activity_edittext_height"
+        android:layout_below="@id/etEmail"
+        android:layout_marginHorizontal="@dimen/register_activity_edittext_marginhorizontal"
+        android:layout_marginTop="@dimen/register_activity_edittext_margintop"
+        android:background="@drawable/rounded_edittext_bg"
+        android:drawableStart="@drawable/mobile_number_icon"
+        android:drawablePadding="@dimen/register_activity_drawable_padding"
+        android:drawableTint="@color/icon_grey"
+        android:hint="@string/enter_mobile_number"
+        android:padding="@dimen/register_activity_edittext_padding" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etAddr"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_activity_edittext_height"
+        android:layout_below="@id/etMobileNum"
+        android:layout_marginHorizontal="@dimen/register_activity_edittext_marginhorizontal"
+        android:layout_marginTop="@dimen/register_activity_edittext_margintop"
+        android:background="@drawable/rounded_edittext_bg"
+        android:drawableStart="@drawable/address_location_pin"
+        android:drawablePadding="@dimen/register_activity_drawable_padding"
+        android:hint="@string/enter_address"
+        android:padding="@dimen/register_activity_edittext_padding" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etPwd1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_activity_edittext_height"
+        android:layout_below="@id/etAddr"
+        android:layout_marginHorizontal="@dimen/register_activity_edittext_marginhorizontal"
+        android:layout_marginTop="@dimen/register_activity_edittext_margintop"
+        android:background="@drawable/rounded_edittext_bg"
+        android:drawableStart="@drawable/password_lock_icon"
+        android:drawablePadding="@dimen/register_activity_drawable_padding"
+        android:drawableTint="@color/icon_grey"
+        android:hint="@string/enter_password"
+        android:padding="@dimen/register_activity_edittext_padding" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etPwd2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_activity_edittext_height"
+        android:layout_below="@id/etPwd1"
+        android:layout_marginHorizontal="@dimen/register_activity_edittext_marginhorizontal"
+        android:layout_marginTop="@dimen/register_activity_edittext_margintop"
+        android:background="@drawable/rounded_edittext_bg"
+        android:drawableStart="@drawable/password_lock_icon"
+        android:drawablePadding="@dimen/register_activity_drawable_padding"
+        android:drawableTint="@color/icon_grey"
+        android:hint="@string/enter_password_again"
+        android:padding="@dimen/register_activity_edittext_padding" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPwd2"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/general_button_color"
+        android:hint="@string/register"
+        android:textColorHint="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

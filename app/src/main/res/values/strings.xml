@@ -6,4 +6,10 @@
     <string name="don_t_have_an_account_register"><u>Don't have an account? Register</u></string>
     <string name="preference_file_name">food_runner_cache</string>
     <string name="login">Login</string>
+    <string name="register_yourself">Register Yourself</string>
+    <string name="name_input">Enter Name</string>
+    <string name="e_mail_address_input">Enter E-Mail Address</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="enter_password_again">Enter Password Again</string>
+    <string name="register">Register</string>
 </resources>
