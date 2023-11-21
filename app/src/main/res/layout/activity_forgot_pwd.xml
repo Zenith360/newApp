@@ -28,7 +28,7 @@
         android:id="@+id/etEmailpwd"
         android:layout_width="match_parent"
         android:layout_height="@dimen/register_activity_edittext_height"
-        android:layout_below="@id/txtFpwd"
+        android:layout_below="@id/etMobNumfpwd"
         android:layout_marginHorizontal="@dimen/register_activity_edittext_marginhorizontal"
         android:layout_marginTop="@dimen/register_activity_edittext_margintop"
         android:background="@drawable/rounded_edittext_bg"
@@ -37,5 +37,32 @@
         android:hint="@string/e_mail_address_input"
         android:inputType="textEmailAddress"
         android:padding="@dimen/register_activity_edittext_padding" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etMobNumfpwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_activity_edittext_height"
+        android:layout_below="@id/txtFpwd"
+        android:layout_marginHorizontal="@dimen/register_activity_edittext_marginhorizontal"
+        android:layout_marginTop="@dimen/register_activity_edittext_margintop"
+        android:background="@drawable/rounded_edittext_bg"
+        android:drawableStart="@drawable/mobile_number_icon"
+        android:drawablePadding="@dimen/register_activity_drawable_padding"
+        android:drawableTint="@color/icon_grey"
+        android:hint="@string/enter_mobile_number"
+        android:maxLength="10"
+        android:padding="@dimen/register_activity_edittext_padding" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmailpwd"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/general_button_color"
+        android:hint="@string/next_fpwd"
+        android:textColorHint="@color/white"
+        android:textSize="20sp" />
 
 </RelativeLayout>

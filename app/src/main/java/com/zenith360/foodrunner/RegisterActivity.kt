@@ -96,7 +96,7 @@ class RegisterActivity : AppCompatActivity() {
 
                     sharedPreferences.edit().putBoolean("Logged_In", true).apply()
 
-                    val intent = Intent(this@RegisterActivity)
+                    val intent = Intent(this@RegisterActivity, ActualMainActivity::class.java)
                     startActivity(intent)
                     finish()
                 }

@@ -13,4 +13,5 @@
     <string name="enter_password_again">Enter Password Again</string>
     <string name="register">Register</string>
     <string name="forgot_pwd_txt">Enter your registered mobile number and email below: \n</string>
+    <string name="next_fpwd">Next</string>
 </resources>
