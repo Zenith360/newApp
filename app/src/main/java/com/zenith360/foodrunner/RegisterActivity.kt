@@ -12,9 +12,9 @@ import android.widget.Toast
 
 class RegisterActivity : AppCompatActivity() {
 
-    private lateinit var txtRegYou: TextView
-    private lateinit var etName: EditText
-    private lateinit var etEmail: EditText
+    private lateinit var txtRegYou1: TextView
+    private lateinit var etName1: EditText
+    private lateinit var etEmail1: EditText
     private lateinit var etMobileNum: EditText
     private lateinit var etAddr: EditText
     private lateinit var etPwd1: EditText
@@ -30,9 +30,9 @@ class RegisterActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_register)
 
-        txtRegYou = findViewById(R.id.txtRegYou)
-        etName = findViewById(R.id.etName)
-        etEmail = findViewById(R.id.etEmail)
+        txtRegYou1 = findViewById(R.id.txtRegYou1)
+        etName1 = findViewById(R.id.etName1)
+        etEmail1 = findViewById(R.id.etEmail1)
         etMobileNum = findViewById(R.id.etMobileNum)
         etAddr = findViewById(R.id.etAddr)
         etPwd1 = findViewById(R.id.etPwd1)
@@ -41,8 +41,8 @@ class RegisterActivity : AppCompatActivity() {
 
         btnReg.setOnClickListener {
 
-            val name = etName.text.toString()
-            val email = etEmail.text.toString()
+            val name = etName1.text.toString()
+            val email = etEmail1.text.toString()
             val mobNum = etMobileNum.text.toString()
             val addr = etAddr.text.toString()
             val pwd1 = etPwd1.text.toString()
@@ -56,7 +56,7 @@ class RegisterActivity : AppCompatActivity() {
                     Toast.LENGTH_LONG
                 ).show()
 
-                etName.text.clear()
+                etName1.text.clear()
             }
 
             if (pwd1 == pwd2) {

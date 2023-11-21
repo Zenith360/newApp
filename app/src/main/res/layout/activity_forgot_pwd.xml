@@ -4,7 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ForgotPwd"
-    android:background="@color/food_runner_background_color">
+    android:background="@color/food_runner_background_color"
+    tools:context=".ForgotPwd">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgLogopwd"
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_height"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/food_runner_logo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtFpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogopwd"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/forgot_pwd_txt"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etEmailpwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_activity_edittext_height"
+        android:layout_below="@id/txtFpwd"
+        android:layout_marginHorizontal="@dimen/register_activity_edittext_marginhorizontal"
+        android:layout_marginTop="@dimen/register_activity_edittext_margintop"
+        android:background="@drawable/rounded_edittext_bg"
+        android:drawableStart="@drawable/mail_icon"
+        android:drawablePadding="@dimen/register_activity_drawable_padding"
+        android:hint="@string/e_mail_address_input"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/register_activity_edittext_padding" />
 
 </RelativeLayout>
