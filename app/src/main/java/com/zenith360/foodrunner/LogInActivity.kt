@@ -70,6 +70,7 @@ class LogInActivity : AppCompatActivity() {
 
                 val intent = Intent(this@LogInActivity, )
                 startActivity(intent)
+                finish()
             } else {
 
                 Toast.makeText(
