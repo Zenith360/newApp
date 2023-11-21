@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/food_runner_background_color"
+    tools:context=".LogInActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/food_runner_logo" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etMob"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/imgLogo"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:drawableStart="@drawable/mobile_number_icon"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/icon_grey"
+        android:hint="@string/enter_mobile_number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingStart="15dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etPwd"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/etMob"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:drawableStart="@drawable/password_lock_icon"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/icon_grey"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:paddingStart="15dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPwd"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/log_in_button_color"
+        android:hint="@string/login"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@color/food_runner_background_color"
+        android:text="@string/forgot_password"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="@string/don_t_have_an_account_register"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

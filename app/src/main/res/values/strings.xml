@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Food Runner</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="don_t_have_an_account_register"><u>Don't have an account? Register</u></string>
+    <string name="preference_file_name">food_runner_cache</string>
+    <string name="login">Login</string>
+</resources>
