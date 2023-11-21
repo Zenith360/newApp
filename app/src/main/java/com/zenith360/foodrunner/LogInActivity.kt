@@ -61,10 +61,10 @@ class LogInActivity : AppCompatActivity() {
             val mobNumber = etMob.text.toString()
             val pwd = etPwd.text.toString()
 
-            val pwdSet = Credentials.pwdSet
             val mobNumberSet = Credentials.mobNumberSet
+            val pwdMap = Credentials.pwdMap
 
-            if (pwdSet.contains(pwd) && mobNumberSet.contains(mobNumber)) {
+            if (mobNumberSet.contains(mobNumber) && pwdMap[mobNumber] == pwd) {
 
                 sharedPreferences.edit().putBoolean("Logged_In", true).apply()
 

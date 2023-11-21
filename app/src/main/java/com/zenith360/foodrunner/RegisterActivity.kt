@@ -71,6 +71,15 @@ class RegisterActivity : AppCompatActivity() {
 
                     etPwd1.text.clear()
                     etPwd2.text.clear()
+                } else if (Credentials.mobNumberSet.contains(mobNum)) {
+
+                    Toast.makeText(
+                        this@RegisterActivity,
+                        "This Number has already been registered",
+                        Toast.LENGTH_SHORT
+                    ).show()
+
+                    etMobileNum.text.clear()
                 } else {
 
                     Toast.makeText(
@@ -79,16 +88,17 @@ class RegisterActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
 
-                    Credentials.nameSet.add(name)
-                    Credentials.emailSet.add(email)
+                    Credentials.nameMap[mobNum] = name
+                    Credentials.emailMap[mobNum] = email
+                    Credentials.pwdMap[mobNum] = pwd1
+                    Credentials.addrMap[mobNum] = addr
                     Credentials.mobNumberSet.add(mobNum)
-                    Credentials.addrSet.add(addr)
-                    Credentials.pwdSet.add(pwd1)
 
                     sharedPreferences.edit().putBoolean("Logged_In", true).apply()
 
-                    val intent = Intent(this@RegisterActivity, )
+                    val intent = Intent(this@RegisterActivity)
                     startActivity(intent)
+                    finish()
                 }
             } else {
 
