@@ -29,7 +29,7 @@ class LogInActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_log_in)
 
-        val intent = Intent(this@LogInActivity, ActualMainActvity::class.java)
+        val intent = Intent(this@LogInActivity, ActualMainActivity::class.java)
         val isLoggedIn = sharedPreferences.getBoolean("Logged_In", false)
 
         if (isLoggedIn) {
@@ -68,7 +68,7 @@ class LogInActivity : AppCompatActivity() {
 
                 sharedPreferences.edit().putBoolean("Logged_In", true).apply()
 
-                val intent = Intent(this@LogInActivity, ActualMainActvity::class.java)
+                val intent = Intent(this@LogInActivity, ActualMainActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {

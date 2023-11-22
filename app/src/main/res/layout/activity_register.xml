@@ -30,7 +30,8 @@
         android:drawablePadding="@dimen/register_activity_drawable_padding"
         android:hint="@string/name_input"
         android:inputType="text"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:textColor="@color/black" />
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/etEmail1"
@@ -44,10 +45,11 @@
         android:drawablePadding="@dimen/register_activity_drawable_padding"
         android:hint="@string/e_mail_address_input"
         android:inputType="textEmailAddress"
-        android:padding="@dimen/register_activity_edittext_padding" />
+        android:padding="@dimen/register_activity_edittext_padding"
+        android:textColor="@color/black" />
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/etMobileNum"
+        android:id="@+id/etMobile1"
         android:layout_width="match_parent"
         android:layout_height="@dimen/register_activity_edittext_height"
         android:layout_below="@id/etEmail1"
@@ -58,26 +60,30 @@
         android:drawablePadding="@dimen/register_activity_drawable_padding"
         android:drawableTint="@color/icon_grey"
         android:hint="@string/enter_mobile_number"
-        android:padding="@dimen/register_activity_edittext_padding" />
+        android:inputType="number"
+        android:maxLength="10"
+        android:padding="@dimen/register_activity_edittext_padding"
+        android:textColor="@color/black" />
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/etAddr"
+        android:id="@+id/etAddrchanged"
         android:layout_width="match_parent"
         android:layout_height="@dimen/register_activity_edittext_height"
-        android:layout_below="@id/etMobileNum"
+        android:layout_below="@id/etMobile1"
         android:layout_marginHorizontal="@dimen/register_activity_edittext_marginhorizontal"
         android:layout_marginTop="@dimen/register_activity_edittext_margintop"
         android:background="@drawable/rounded_edittext_bg"
         android:drawableStart="@drawable/address_location_pin"
         android:drawablePadding="@dimen/register_activity_drawable_padding"
         android:hint="@string/enter_address"
-        android:padding="@dimen/register_activity_edittext_padding" />
+        android:padding="@dimen/register_activity_edittext_padding"
+        android:textColor="@color/black" />
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/etPwd1"
+        android:id="@+id/etPwd11"
         android:layout_width="match_parent"
         android:layout_height="@dimen/register_activity_edittext_height"
-        android:layout_below="@id/etAddr"
+        android:layout_below="@id/etAddrchanged"
         android:layout_marginHorizontal="@dimen/register_activity_edittext_marginhorizontal"
         android:layout_marginTop="@dimen/register_activity_edittext_margintop"
         android:background="@drawable/rounded_edittext_bg"
@@ -85,13 +91,15 @@
         android:drawablePadding="@dimen/register_activity_drawable_padding"
         android:drawableTint="@color/icon_grey"
         android:hint="@string/enter_password"
-        android:padding="@dimen/register_activity_edittext_padding" />
+        android:inputType="textPassword"
+        android:padding="@dimen/register_activity_edittext_padding"
+        android:textColor="@color/black" />
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/etPwd2"
+        android:id="@+id/etPwd21"
         android:layout_width="match_parent"
         android:layout_height="@dimen/register_activity_edittext_height"
-        android:layout_below="@id/etPwd1"
+        android:layout_below="@id/etPwd11"
         android:layout_marginHorizontal="@dimen/register_activity_edittext_marginhorizontal"
         android:layout_marginTop="@dimen/register_activity_edittext_margintop"
         android:background="@drawable/rounded_edittext_bg"
@@ -99,13 +107,15 @@
         android:drawablePadding="@dimen/register_activity_drawable_padding"
         android:drawableTint="@color/icon_grey"
         android:hint="@string/enter_password_again"
-        android:padding="@dimen/register_activity_edittext_padding" />
+        android:inputType="textPassword"
+        android:padding="@dimen/register_activity_edittext_padding"
+        android:textColor="@color/black" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnReg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/etPwd2"
+        android:layout_below="@id/etPwd21"
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="40dp"
         android:background="@color/general_button_color"

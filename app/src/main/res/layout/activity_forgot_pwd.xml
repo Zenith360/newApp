@@ -36,7 +36,8 @@
         android:drawablePadding="@dimen/register_activity_drawable_padding"
         android:hint="@string/e_mail_address_input"
         android:inputType="textEmailAddress"
-        android:padding="@dimen/register_activity_edittext_padding" />
+        android:padding="@dimen/register_activity_edittext_padding"
+        android:textColor="@color/black" />
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/etMobNumfpwd"
@@ -51,7 +52,9 @@
         android:drawableTint="@color/icon_grey"
         android:hint="@string/enter_mobile_number"
         android:maxLength="10"
-        android:padding="@dimen/register_activity_edittext_padding" />
+        android:padding="@dimen/register_activity_edittext_padding"
+        android:inputType="number"
+        android:textColor="@color/black"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnFpwd"

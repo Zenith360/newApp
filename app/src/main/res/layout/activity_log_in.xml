@@ -30,7 +30,8 @@
         android:inputType="number"
         android:maxLength="10"
         android:maxLines="1"
-        android:paddingStart="15dp" />
+        android:paddingStart="15dp"
+        android:textColor="@color/black" />
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/etPwd"
@@ -46,7 +47,8 @@
         android:hint="@string/enter_password"
         android:inputType="textPassword"
         android:maxLines="1"
-        android:paddingStart="15dp" />
+        android:paddingStart="15dp"
+        android:textColor="@color/black" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnLogIn"

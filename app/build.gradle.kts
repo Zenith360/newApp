@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.zenith360.foodrunner"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.zenith360.foodrunner"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 

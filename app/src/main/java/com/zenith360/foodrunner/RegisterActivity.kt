@@ -15,10 +15,10 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var txtRegYou1: TextView
     private lateinit var etName1: EditText
     private lateinit var etEmail1: EditText
-    private lateinit var etMobileNum: EditText
-    private lateinit var etAddr: EditText
-    private lateinit var etPwd1: EditText
-    private lateinit var etPwd2: EditText
+    private lateinit var etMobile1: EditText
+    private lateinit var etAddrchanged: EditText
+    private lateinit var etPwd11: EditText
+    private lateinit var etPwd21: EditText
     private lateinit var btnReg: Button
 
     private lateinit var sharedPreferences: SharedPreferences
@@ -33,20 +33,20 @@ class RegisterActivity : AppCompatActivity() {
         txtRegYou1 = findViewById(R.id.txtRegYou1)
         etName1 = findViewById(R.id.etName1)
         etEmail1 = findViewById(R.id.etEmail1)
-        etMobileNum = findViewById(R.id.etMobileNum)
-        etAddr = findViewById(R.id.etAddr)
-        etPwd1 = findViewById(R.id.etPwd1)
-        etPwd2 = findViewById(R.id.etPwd2)
+        etMobile1 = findViewById(R.id.etMobile1)
+        etAddrchanged = findViewById(R.id.etAddrchanged)
+        etPwd11 = findViewById(R.id.etPwd11)
+        etPwd21 = findViewById(R.id.etPwd21)
         btnReg = findViewById(R.id.btnReg)
 
         btnReg.setOnClickListener {
 
             val name = etName1.text.toString()
             val email = etEmail1.text.toString()
-            val mobNum = etMobileNum.text.toString()
-            val addr = etAddr.text.toString()
-            val pwd1 = etPwd1.text.toString()
-            val pwd2 = etPwd2.text.toString()
+            val mobNum = etMobile1.text.toString()
+            val addr = etAddrchanged.text.toString()
+            val pwd1 = etPwd11.text.toString()
+            val pwd2 = etPwd21.text.toString()
 
             if (name.length < 3) {
 
@@ -69,8 +69,8 @@ class RegisterActivity : AppCompatActivity() {
                         Toast.LENGTH_LONG
                     ).show()
 
-                    etPwd1.text.clear()
-                    etPwd2.text.clear()
+                    etPwd11.text.clear()
+                    etPwd21.text.clear()
                 } else if (Credentials.mobNumberSet.contains(mobNum)) {
 
                     Toast.makeText(
@@ -79,7 +79,7 @@ class RegisterActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
 
-                    etMobileNum.text.clear()
+                    etMobile1.text.clear()
                 } else {
 
                     Toast.makeText(
@@ -108,8 +108,8 @@ class RegisterActivity : AppCompatActivity() {
                     Toast.LENGTH_LONG
                 ).show()
 
-                etPwd1.text.clear()
-                etPwd2.text.clear()
+                etPwd11.text.clear()
+                etPwd21.text.clear()
             }
         }
     }

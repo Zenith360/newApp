@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/food_runner_background_color"
+    tools:context=".GetInfo">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtNamegifo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/txtEmailgifo"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:text="Name:"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="210dp"
+        android:layout_toEndOf="@id/txtNamegifo"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtEmailgifo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNameField"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="E-mail:"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtEmailField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNameField"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/txtEmailgifo"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtMobileNumbergifo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEmailField"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Mobile Number:"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtMobNumField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEmailField"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/txtMobileNumbergifo"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtPasswordgifo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMobNumField"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Password:"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtPwdField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMobNumField"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/txtPasswordgifo"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtAddrgifo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPwdField"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Address:"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtAddrField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPwdField"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/txtAddrgifo"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+</RelativeLayout>

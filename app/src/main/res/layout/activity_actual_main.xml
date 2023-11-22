@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActualMainActivity"
+    android:background="@color/food_runner_background_color">
+
+    <ImageView
+        android:id="@+id/imgFinalLogo"
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_height"
+        android:src="@drawable/food_runner_logo"
+        android:layout_centerInParent="true"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFinalBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:background="@color/general_button_color"
+        android:layout_below="@id/imgFinalLogo"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
